@@ -4,12 +4,26 @@ Sistema de gestión de préstamos con validación de pagos desarrollado con Reac
 
 ## 🌐 Deploy en Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/tu-usuario/PrestamosApp)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/AndresMorquecho/PrestamosApp)
 
-### Configuración para Vercel:
-- **Build Command**: `npm run build`
-- **Output Directory**: `dist`
-- **Install Command**: `npm install`
+### ⚙️ Configuración en Vercel Dashboard:
+
+**IMPORTANTE:** No uses el archivo `vercel.json`, configura manualmente en el dashboard:
+
+1. **Framework Preset**: `Other`
+2. **Build Command**: `expo export -p web`
+3. **Output Directory**: `dist`
+4. **Install Command**: `npm install`
+
+### 🐛 Si la página aparece en blanco:
+
+1. **Elimina el archivo `vercel.json`** (o renómbralo a `vercel.json.backup`)
+2. **Ve a tu proyecto en Vercel** → Settings → General
+3. **Configura manualmente:**
+   - Build Command: `expo export -p web`
+   - Output Directory: `dist`
+   - Framework Preset: `Other`
+4. **Redespliega** desde el tab "Deployments" → clic en los 3 puntos → "Redeploy"
 
 La aplicación está optimizada para ejecutarse como Progressive Web App (PWA) en Vercel.
 
