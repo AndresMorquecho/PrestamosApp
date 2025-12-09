@@ -1,7 +1,12 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# dependencies
+# Dependencies
 node_modules/
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+pnpm-debug.log*
+.pnp.*
 
 # Expo
 .expo/
@@ -17,25 +22,71 @@ expo-env.d.ts
 *.p12
 *.key
 *.mobileprovision
+*.apk
+*.ipa
 
 # Metro
 .metro-health-check*
 
-# debug
+# Debug & Logs
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+*.log
+logs/
 
-# macOS
+# Environment Variables
+.env
+.env*.local
+.env.development
+.env.production
+.env.test
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# OS Files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 *.pem
 
-# local env files
-.env*.local
-
-# typescript
+# TypeScript
 *.tsbuildinfo
+*.tsbuildinfo.*
 
-# generated native folders
+# Generated Native Folders
 /ios
 /android
+
+# Build & Production
+build/
+*.local
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary Files
+*.tmp
+*.temp
+.cache/
+
+# Package Manager Locks (opcional, algunos equipos prefieren commitear estos archivos)
+# yarn.lock
+# package-lock.json
+# pnpm-lock.yaml
