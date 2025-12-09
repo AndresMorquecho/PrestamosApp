@@ -1,14 +1,3 @@
-module.exports = {
-  web: {
-    build: {
-      babel: {
-        use: {
-          loader: 'babel-loader',
-          options: {
-            cacheDirectory: false,
-          },
-        },
-      },
-    },
-  },
-};
+const { getDefaultConfig } = require('expo/metro-config');
+
+module.exports = getDefaultConfig(__dirname);
